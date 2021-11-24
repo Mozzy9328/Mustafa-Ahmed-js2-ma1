@@ -1,0 +1,111 @@
+/*
+
+LAYOUT
+
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.big-container {
+	flex: 1 0 auto;
+}
+
+/* 
+
+
+Products 
+
+
+*/
+
+.products {
+	display: grid;
+	grid-template-areas: "1 1 1 1";
+	margin: 0 auto;
+	grid-gap: 50px;
+}
+
+/* .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+} */
+
+.item-text {
+	background-color: #04241a;
+	color: #fff;
+	text-align: center;
+}
+
+.filter {
+	margin: 20px 0px 40px 20px;
+	text-align: center;
+}
+
+.filter-price {
+	margin-left: 20px;
+}
+
+/*
+
+
+NAV
+
+
+*/
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style: none;
+	background-color: #04241a;
+	padding: 1rem;
+}
+
+li a {
+	text-decoration: none;
+	color: #ffff;
+	margin-right: 1rem;
+}
+
+/*
+
+
+TYPOGRAPHY
+
+
+*/
+
+h1 {
+	text-align: center;
+}
+
+p {
+	margin: 1rem;
+}
+
+/*
+FOOTER
+
+*/
+
+footer {
+	background-color: #04241a;
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	flex-shrink: 0;
+}
