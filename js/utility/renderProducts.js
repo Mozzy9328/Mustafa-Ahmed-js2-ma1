@@ -6,10 +6,10 @@ export function renderProducts(data) {
 	data.forEach((item) => {
 		products.innerHTML += `
         <div class="item-text">
-            <p data-name="${item.title}"> ${item.title} </p>
-            <p data-price="${item.price}">${item.price}</p>
+            <p> ${item.title} </p>
+            <p>${item.price}</p>
+            <button class="btn" data-name="${item.title}"data-price="${item.price}">add item</button>
         </div>
-
     `;
 	});
 }

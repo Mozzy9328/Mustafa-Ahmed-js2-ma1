@@ -8,7 +8,8 @@ export function searchProducts(data) {
 		console.log(searchPrice);
 
 		const filteredNameSearch = data.filter(function (item) {
-			if (item.price.startsWith(searchPrice) < item.price) {
+			if (item.price <= searchPrice) {
+				console.log(item.price);
 				return true;
 			}
 		});

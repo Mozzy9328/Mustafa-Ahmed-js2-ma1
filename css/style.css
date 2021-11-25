@@ -44,9 +44,21 @@ Products
 } */
 
 .item-text {
+	position: relative;
 	background-color: #04241a;
 	color: #fff;
 	text-align: center;
+	place-self: center stretch;
+}
+
+span {
+	position: absolute;
+	color: #000;
+	font-weight: bold;
+	background-color: #fff;
+	cursor: pointer;
+	padding: 0px 5px;
+	right: 0px;
 }
 
 .filter {
@@ -56,6 +68,22 @@ Products
 
 .filter-price {
 	margin-left: 20px;
+}
+
+button {
+	padding: 10px;
+	cursor: pointer;
+}
+
+/*
+
+ERROR
+
+*/
+
+.error {
+	color: rgb(255, 0, 0);
+	text-align: center;
 }
 
 /*
