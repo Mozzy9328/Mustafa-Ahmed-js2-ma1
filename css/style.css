@@ -44,7 +44,6 @@ Products
 } */
 
 .item-text {
-	position: relative;
 	background-color: #04241a;
 	color: #fff;
 	text-align: center;
@@ -53,12 +52,18 @@ Products
 
 span {
 	position: absolute;
-	color: #000;
+	color: #fff;
 	font-weight: bold;
-	background-color: #fff;
+	font-size: 20px;
+	z-index: 1;
 	cursor: pointer;
 	padding: 0px 5px;
-	right: 0px;
+	right: 5px;
+	top: 0;
+}
+
+span:hover {
+	color: rgb(255, 0, 0);
 }
 
 .filter {
@@ -71,8 +76,9 @@ span {
 }
 
 button {
-	padding: 10px;
+	position: relative;
 	cursor: pointer;
+	margin: 0 auto;
 }
 
 /*

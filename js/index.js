@@ -18,11 +18,21 @@ async function callAPI() {
 
 		btn.forEach((itemButton) => {
 			itemButton.addEventListener("click", handleClick);
+			itemButton.addEventListener("click", function () {
+				const remove = itemButton.innerText;
+
+				if (remove === "add item") {
+					itemButton.innerText = "remove";
+					itemButton.style.color = "red";
+				}
+				if (remove === "remove") {
+					itemButton.innerHTML = "add item";
+					itemButton.style.color = "black";
+				}
+			});
 		});
 
 		function handleClick(event) {
-			console.log(event.target);
-
 			const productName = this.dataset.name;
 			const productPrice = this.dataset.price;
 
