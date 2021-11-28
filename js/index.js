@@ -23,16 +23,18 @@ async function callAPI() {
 
 				if (remove === "add item") {
 					itemButton.innerText = "remove";
-					itemButton.style.color = "red";
+					itemButton.style.color = "var(--secondary)";
+					itemButton.style.backgroundColor = "var(--primary)";
 				}
 				if (remove === "remove") {
 					itemButton.innerHTML = "add item";
-					itemButton.style.color = "black";
+					itemButton.style.color = "#ffff";
+					itemButton.style.backgroundColor = "var(--secondary)";
 				}
 			});
 		});
 
-		function handleClick(event) {
+		function handleClick() {
 			const productName = this.dataset.name;
 			const productPrice = this.dataset.price;
 

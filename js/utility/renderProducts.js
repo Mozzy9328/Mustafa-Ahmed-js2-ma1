@@ -7,8 +7,8 @@ export function renderProducts(data) {
 		products.innerHTML += `
         <div class="item-text">
             <p> ${item.title} </p>
-            <p>${item.price}</p>
-            <button class="btn" style="padding:10px 20px" data-name="${item.title}"data-price="${item.price}">add item</button>
+            <p>NOK: ${item.price}kr</p>
+            <button class="btn" data-name="${item.title}"data-price="${item.price}">add item</button>
         </div>
     `;
 	});

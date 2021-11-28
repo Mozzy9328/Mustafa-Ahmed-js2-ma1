@@ -4,23 +4,22 @@ import { getExisitingWishList } from "./utility/wishListFunction.js";
 const wishList = getExisitingWishList();
 
 const productsContainer = document.querySelector(".products");
+const container = document.querySelector(".container");
 
 function wishListFunction() {
 	try {
 		if (!wishList.length) {
-			productsContainer.innerHTML = `<p>There is no item added yet</p>`;
+			container.innerHTML = `<p>There is no item added yet</p>`;
 		}
 
 		wishList.forEach((wishlist) => {
 			productsContainer.innerHTML += ` 
 											<div class="item-text">
-												<p> ${wishlist.name} </p>
-												<p>${wishlist.price}</p>
+												<p style="margin:2rem"> ${wishlist.name} </p>
+												<p style="margin:2rem">NOK: ${wishlist.price}kr</p>
 											</div>
 											`;
 		});
-		productsContainer.style.display = "flex";
-		productsContainer.style.flexDirection = "column-reverse";
 	} catch (error) {
 		displayMessage("error", error, ".error");
 	}

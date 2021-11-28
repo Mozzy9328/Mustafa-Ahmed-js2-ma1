@@ -12,22 +12,26 @@
 			<header>
 				<nav>
 					<ul>
-						<li class="current"><a href="index.html">Home</a></li>
-						<li><a href="product.html">Product</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li class="current"><a href="product.html">Product</a></li>
 						<li><a href="wishlist.html">Wishlist</a></li>
 					</ul>
 				</nav>
+				<h1>The Products</h1>
 			</header>
 			<main>
 				<div class="container">
-					<h1>Welcome to E-commerce</h1>
-					<h2>A place full of amazing products</h2>
-					<button>Find your product</button>
+					<input class="filter-price" placeholder="Filter by Price" />
+					<div class="products">Loading..</div>
+
+					<div class="error"></div>
 				</div>
 			</main>
 		</div>
 		<footer>
 			<p>Copyright</p>
 		</footer>
+		<script src="js/index.js" type="module"></script>
+		<script src="js/utility/renderProducts.js" type="module"></script>
 	</body>
 </html>
